@@ -1,3 +1,6 @@
 {{ define "main" }}
 {{ .Content }}
+{{ range .Site.Menus.main }}
+<a href="{{ .URL }}" title="{{ .Title }}">{{ .Name}}</a>
+{{ end }}
 {{ end }}
