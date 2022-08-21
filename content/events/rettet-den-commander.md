@@ -6,11 +6,11 @@ characters: ["Theonon Petrovitch", "Marlene of Paril","Graf Vlad Barov"]
 ---
 # Rettet den Kommandeur
 
-"Rain and thunder is punctuated by the howls of undead above. The
-rainwater exits the drainage pipe. Your Chosen, Roya, will lead an assault
-on the main gates as a distraction. This is a stealth and speed mission. Get
-in. Get the Commander. Get out. Whatever you do, don’t let the undead
-learn the Legion’s secrets. Do not fail."
+>"Rain and thunder is punctuated by the howls of undead above. The
+>rainwater exits the drainage pipe. Your Chosen, Roya, will lead an assault
+>on the main gates as a distraction. This is a stealth and speed mission. Get
+>in. Get the Commander. Get out. Whatever you do, don’t let the undead
+>learn the Legion’s secrets. Do not fail."
 
 Der Kommandeur der Legion ist in einer Bergfestung gefangengenommen worden. Ein Inquisitor des Cinder-King wurde gerufen um die 
 Geheimnisse der Legion aus ihm heraus zu bekommen. 
@@ -32,11 +32,16 @@ machte kurze Arbeit aus der Bedrohung und kurz darauf fand die Spezialeinheit ei
 Das Ablenkungsmanöver war ein voller Erfolg. Der Angriff von Roya verlief ohne großen Widerstand.
 Die Gruppe schlich sich erfolgreich bis zum Bergfried in dem es an der Aussenwand entlang kletterte. 
 Die erfahrenen Krieger erschlugen die einzige Wache gekonnt und schlichen sich erfolgreich in den Bergfried.
+Doch vor dem Raum, in dem der Kommandeur vom Inquisitor gefoltert wurde, standen 2 elite Cinder-Wachen. 
 
-### Im Bergfried 
+Mit einem atemberaubenden Manöver besiegten die Kämpfer die Wachen, und dazu noch den Inquisitor auf einen Schlag. Der Kommandeur konnte mit gebrochenen Geiste, aber unverserten Körper geborgen werden. Marlene sorgte für die erste Versorgung. 
 
-stub: Inquisitor und seine Wachen in einem Desperate Anriff mit Extreme Effect gelungen
+Der das Ablenkungsmanöver von Reya ist im vollem gange. Ein Rammbock der Legion schlägt gegen die Pforte der Festung. 
+Bei den Versuch mit einer Leuchtpistole das Haubtgebäude anzuzünden hat die Truppe leider mehr Aufmerksamkeit auf sich gelenkt. 
+Doch durch Theonons Kampfkraft war es möglich ein Ausgang durch die Tunnel lange genug zu halten damit der Commander erfolgreich extrahiert werden konnte. 
 
-### Escape!
+## Ergebniss
 
-stup: Theonon hat die Untoten mit der Ancor fähigkeit und Rage-potion zurück gehalten damit die Anderen mit dem Kommandeur fliehen konnten. 
+Der Einsatz war ein Erfolg.
+
+Der Kommandeur konnte gerettet werden und das Einsatzteam ist vollständig zurück zur Legion gekommen.
