@@ -3,3 +3,6 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 
 theme = "bob"
+
+[params]
+css = ["css/style.css"]
