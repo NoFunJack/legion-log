@@ -1,1 +1,15 @@
-/* we have no style yet :( */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.menu-entry {
+  text-transform: uppercase;
+}

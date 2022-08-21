@@ -4,7 +4,6 @@
     <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }}">
   {{/* css */}}
-  {{ .Site.Params }}
   {{ range .Site.Params.css -}}
       <link rel="stylesheet" href="{{ . | absURL }}">
   {{- end }}
