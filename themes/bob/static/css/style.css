@@ -13,3 +13,16 @@
 .menu-entry {
   text-transform: uppercase;
 }
+
+.flexbox-panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.flexbox-item {
+  flex: 0 1 auto;
+}

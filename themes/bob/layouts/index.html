@@ -1,9 +1,11 @@
 {{ define "main" }}
 <div class="center">
   <h1 class="hp-title">Lore of the Legion</h1>
-  {{ range .Site.Menus.main }}
-  <a href="{{ .URL }}" title="{{ .Title }}" class="menu-entry">{{ .Name}}</a>
-  {{ end }}
+  <div class="flexbox-panel">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" title="{{ .Title }}" class="menu-entry flexbox-item">{{ .Name}}</a>
+    {{ end }}
+  </div>
   {{ .Content }}
 </div>
 {{ end }}
