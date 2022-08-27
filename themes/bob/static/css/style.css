@@ -1,7 +1,7 @@
-:root {
-  --sidebar-width: 160px;
+html, body {
+  padding: 0;
+  margin: 0;
 }
-
 
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -30,36 +30,47 @@ a:hover {
   margin: 5px;
 }
 
-.flexbox-panel {
+.flexbox-left-center {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  align-items: flex-start;
+  align-content: stretch;
 }
 
-.flexbox-item {
+.flexbox-left-center > * {
   flex: 0 1 auto;
+  align-self: stretch;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+.content {
+  text-align:justify;
+  display: block;
+}
+
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: var(--sidebar-width); /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  flex-basis: 7rem;
+  flex-grow: 1;
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  left: 0;
+  max-height: 100vh;
   background-color: rgb(177, 177, 177);
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
 }
 
-.content {
-  margin-left: var(--sidebar-width);
-  max-width: 800px;
-  text-align:justify;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.not-sidebar {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
 }

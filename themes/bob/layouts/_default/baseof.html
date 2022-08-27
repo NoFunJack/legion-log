@@ -3,14 +3,18 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div class="sidenav">
-            {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}" title="{{ .Title }}" class="menu-entry">{{ .Name}}</a>
-            {{ end }}
-        </div>
-        <div id="content" class="content">
-        {{- block "main" . }}{{- end }}
-        </div>
+        <main class="with-sidebar">
+            <div class="sidenav flexbox-left-center">
+                {{ range .Site.Menus.main }}
+                <div class="text-right">
+                    <a href="{{ .URL }}" title="{{ .Title }}" class="menu-entry">{{ .Name}}</a>
+                </div>
+                {{ end }}
+            </div>
+            <div id="content" class="content not-sidebar">
+            {{- block "main" . }}{{- end }}
+            </div>
+        </main>
         {{- partial "footer.html" . -}}
     </body>
 </html>
