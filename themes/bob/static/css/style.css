@@ -1,6 +1,11 @@
+:root{
+  --sidebar-width: 10rem;
+}
+
 html, body {
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 * {
@@ -30,7 +35,7 @@ a:hover {
   margin: 5px;
 }
 
-.flexbox-left-center {
+.flexbox-sidenav-content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -39,7 +44,7 @@ a:hover {
   align-content: stretch;
 }
 
-.flexbox-left-center > * {
+.flexbox-sidenav-content > * {
   flex: 0 1 auto;
   align-self: stretch;
 }
@@ -48,29 +53,43 @@ a:hover {
   text-align: right;
 }
 
-
 .content {
   text-align:justify;
   display: block;
 }
 
-.with-sidebar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
 .sidenav {
-  flex-basis: 7rem;
-  flex-grow: 1;
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  max-height: 100vh;
+  position: fixed;
+  width: var(--sidebar-width);
+  height: 100%;
   background-color: rgb(177, 177, 177);
 }
 
 .not-sidebar {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-inline-size: 50%;
+ margin-left: var(--sidebar-width);
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --sidebar-width: auto;
+  }
+
+  .flexbox-sidenav-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: normal;
+    align-items: flex-start;
+    align-content: normal;
+  }
+
+  .sidenav {
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    position: static;
+    width: var(--sidebar-width);
+    height: auto;
+    background-color: rgb(177, 177, 177);
+  }
 }
