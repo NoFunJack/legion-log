@@ -1,5 +1,6 @@
 :root{
   --sidebar-width: 10rem;
+  --secondary-color:  rgb(177, 177, 177);
 }
 
 html, body {
@@ -67,7 +68,7 @@ a:hover {
   position: fixed;
   width: var(--sidebar-width);
   height: 100%;
-  background-color: rgb(177, 177, 177);
+  background-color: var(--secondary-color);
 
   display: flex;
   flex-direction: column;
@@ -78,6 +79,26 @@ a:hover {
 
 .not-sidebar {
  margin-left: var(--sidebar-width);
+}
+
+.character-grid {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+  grid-auto-flow: row;
+  padding: 10px;
+  gap: 2rem;
+}
+
+.character-role{
+  text-transform: uppercase;
+  font-size: smaller;
+  font-style: italic;
+}
+
+article.character-card {
+  background-color: var(--secondary-color);
+  padding: 10px;
 }
 
 @media only screen and (max-width: 600px) {

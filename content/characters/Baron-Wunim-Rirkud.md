@@ -1,6 +1,7 @@
 ---
 title: "Baron Wunim Rirkud"
 date: 2022-08-24T15:40:16+02:00
+role: commander
 ---
 
 
