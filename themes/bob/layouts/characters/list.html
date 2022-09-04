@@ -10,8 +10,8 @@
     <!-- Ranges through content/posts/*.md -->
     <div class="character-grid">
         {{ range .Pages }}
-            <article class="character-card">
-                <a href="{{.Permalink}}">{{.Title}}</a>
+            <article class="character-card" onclick="location.href='{{.Permalink}}';" >
+                <div>{{.Title}}</div>
                 {{ if .Params.role }}
                 <div class="character-role">Role: {{.Params.role}}</div>
                 {{ end }}
