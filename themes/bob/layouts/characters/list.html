@@ -11,7 +11,7 @@
     <div class="character-grid">
         {{ range .Pages }}
             <article class="character-card" onclick="location.href='{{.Permalink}}';" >
-                <div>{{.Title}}</div>
+                <div class="{{ if isset .Params "death" }}character-dead{{ end }}">{{.Title}}</div>
                 {{ if .Params.role }}
                 <div class="character-role">Role: {{.Params.role}}</div>
                 {{ end }}
